@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <title>Demo of Model Component Template</title>
+  <style>
+    li {
+      list-style: none;
+      padding-bottom: 10px;
+    }
+    .label {
+      padding: 5px;
+      font-family: Consolas "Courier New" monospace;
+      width: 100px;
+      display: inline-block;
+      background: #EEE;
+      border: 1px solid gray;
+    }
+    li > button {
+      font-family: monospace;
+      border: 1px solid gray;
+      padding: 5px;
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      color: white;
+      background: silver;
+    }
+    .remove {
+      color: #F03;
+    }
+  </style>
+</head>
+<body>
+  <ul class="list"></ul>
+  <ul class="list"></ul>
+
+  <script type="text/template" id="item">
+    <li class="item">
+      <span class="label"></span>
+      <button class="add">+</button>
+      <button class="sub">-</button>
+      <button class="remove">X</button>
+    </li>
+  </script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="controller.js"></script>
+</body>
+</html>
